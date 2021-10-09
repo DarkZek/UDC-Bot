@@ -9,7 +9,7 @@ RUN dotnet restore
 RUN dotnet build --configuration Release --no-restore
 
 
-# Build finale image
+# Build final image
 FROM mcr.microsoft.com/dotnet/runtime:5.0
 
 WORKDIR /app/
